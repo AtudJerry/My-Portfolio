@@ -1,4 +1,7 @@
 body {
+  background-image: url('./backpic11.jpg');
+  
+  /* background-image: linear-gradient(rgb(19, 19, 36),rgb(51, 49, 77), rgb(20, 18, 19)); */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +14,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
