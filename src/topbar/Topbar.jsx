@@ -10,7 +10,12 @@ import CallIcon from '@mui/icons-material/Call';
 
 
     return(
-        <Box className = "links">
+        <Box sx = {{ display: 'flex',
+            justifyContent : "space-between",
+            marginLeft: '500px',
+            marginRight: '20px',
+            marginTop: '20px',
+            }}>
         
         
             <Link to="/Components/Home">Home </Link>

@@ -17,22 +17,24 @@ function App() {
     
   
     
-    <div>
+    <div className="app">
       <Sidebar/>
 
-      <div>
-    <Router>
-   
-    <Topbar/>
+      
+  
       
     
     
      
-    
+    <main className="content">
+    <Router>
+   
+   <Topbar/>
       <Body/>
       
 
-    <div className="App">
+     
+              <index/>
       <Switch>
       <Route exact path ="/Components/Home"> <Home/> </Route>
       <Route path= "/Components/Contact"> <Contact/></Route>
@@ -41,12 +43,13 @@ function App() {
       <Route path= "/Components/Skills"> <Skills/></Route>
       
       </Switch>
-    </div>
+      </Router>
+    </main>
   
-  </Router>
+ 
   </div>
   </div>
-  </div>
+  
   )
 }
 

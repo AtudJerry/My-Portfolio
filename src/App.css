@@ -2,12 +2,6 @@ body{
   
   color: rgb(200, 213, 179);
 }.links {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px;
-  margin-left: 500px;
-  margin-right: 100px;
-  margin-top: 0px;
   
   
 }
@@ -47,3 +41,18 @@ a:hover{
   color: white;
   
 }
+
+.content {
+    height: 100%;
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+.app {
+    display: flex;
+    position: relative;
+  
+
+  
+  }
+
+

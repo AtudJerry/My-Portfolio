@@ -18,15 +18,28 @@ import {
 function Sidebar() {
 
     return( 
-        <ProSidebar style = {{height : "600px"}}>
+        <ProSidebar style = {{height : "650px"}}>
             <SidebarContent>
                 <SidebarHeader>header</SidebarHeader>
                 <Menu>
                     <MenuItem>
                     <Typography variant ="h8"> menu item</Typography>
-                    
-                    
                     </MenuItem>
+
+                    <MenuItem>
+                    <Typography variant ="h8"> menu item</Typography>
+                    </MenuItem>
+
+                    <MenuItem>
+                    <Typography variant ="h8"> menu item</Typography>
+                    </MenuItem>
+
+                    <MenuItem>
+                    <Typography variant ="h8"> menu item</Typography>
+                    </MenuItem>
+
+
+
 
 
                 </Menu>

@@ -20,7 +20,7 @@ const Home = () => {
     <div>
       
         
-      <Box mr="100px" ml = "326px" mt ="9px" padding = "3px" sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box  padding = "3px" mt = "90px" sx={{ display: "flex", justifyContent: "space-between" }}>
        
 
         <Box mt="90px" >
@@ -28,9 +28,9 @@ const Home = () => {
             <Box
               sx={{
                 bgcolor: "transparent",
-                height: "50vh",
-                width: "380px",
-                borderRadius: "30%",
+                // height: "50vh",
+                // width: "300px",
+                // borderRadius: "30%",
                 
               }}
             >
@@ -60,7 +60,7 @@ const Home = () => {
                   <TwitterIcon className="icon" />
                   </IconButton>
 
-                  <IconButton  size = "large" color = "info">
+                  <IconButton  size = "large" color = "primary">
                   <LinkedInIcon className="icon" />
                   </IconButton>
                   
@@ -70,7 +70,7 @@ const Home = () => {
           </Container>
         </Box>
 
-        <Box marginX={"90px"}>
+        <Box marginX={"150px"}>
           {/* <Paper> */}
           <img
             alt="profile-user"
@@ -93,7 +93,8 @@ const Home = () => {
       </div>
 
     </div>
+  )
 
-  );
+  ;
 };
 export default Home;
