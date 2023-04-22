@@ -13,14 +13,17 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { blue } from "@mui/material/colors";
 import Sidebar from "../Sidebar";
 
+import Typewriter from 'typewriter-effect';
+
+
 
 
 const Home = () => {
   return (
     <div>
-      
+    
         
-      <Box  padding = "3px" mt = "90px" sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box  padding = "3px" mt = "20px" sx={{ display: "flex", justifyContent: "space-between" }}>
        
 
         <Box mt="90px" >
@@ -34,10 +37,17 @@ const Home = () => {
                 
               }}
             >
+                
               <Typography className="text" variant="h5">
                 
                 My name is ATUD KONFOR JERRY, <br></br>I come from the North
-                West region of Cameroon.<br></br><br></br>Student at National Higher Polytechnic Institute Bamenda
+                West region of Cameroon.<br></br><br></br>Student at National Higher Polytechnic Institute Bamenda<br></br>I am a frontend developer and i work with <Typewriter className="type"
+  options={{
+    strings: ['JavaScript/Html/css','React'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
                 <br></br>
                 <Box
                   sx={{
@@ -46,23 +56,25 @@ const Home = () => {
                     padding: "1px",
                   }}
                 >
-                    <Box sx={{fontSize : '50%'}}>
-                    <IconButton  size = "large" color = "info">
-                  <GitHubIcon className="icon" />
-                  </IconButton>
+                    <Box sx={{fontSize : '100%'}}>
+                    
+                <a href="https://github.com/AtudJerry">  <GitHubIcon className="icon" />    </a>  
+                  
                   </Box>
 
-                   <IconButton  size = "large" color = "info">
-                  <InstagramIcon className="icon" />
-                  </IconButton>
+                   
+                <a href="https://instagram.com/atud_jerry33?igshid=ZDdkNTZiNTM=">  <InstagramIcon className="icon" />   </a>  
 
-                  <IconButton size = "large" color = "info">
-                  <TwitterIcon className="icon" />
-                  </IconButton>
 
-                  <IconButton  size = "large" color = "primary">
-                  <LinkedInIcon className="icon" />
-                  </IconButton>
+
+                
+                <a href="/"> <TwitterIcon className="icon" /> </a>
+                 
+                  
+
+                  <a href="https://www.linkedin.com/in/atud-jerry-013798207"> <LinkedInIcon className="icon" /></a>
+                  
+                  
                   
                 </Box>
               </Typography>
@@ -70,7 +82,7 @@ const Home = () => {
           </Container>
         </Box>
 
-        <Box marginX={"150px"}>
+        <Box MT = "1000px" marginX={"150px"}>
           {/* <Paper> */}
           <img
             alt="profile-user"
@@ -86,11 +98,7 @@ const Home = () => {
       </Box>
       <br></br>
 <br></br>
-      <div className="footer">
-      <p>@copyright</p>
-
-
-      </div>
+    
 
     </div>
   )

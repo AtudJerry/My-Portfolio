@@ -8,10 +8,10 @@ body{
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(220, 201, 223);
 }
 a:hover{
-  color: rgb(37, 46, 179);
+  color: rgb(203, 170, 218);
 }
 .container{ 
   transition: 0.3s ease-out 0s !important;
@@ -21,25 +21,27 @@ a:hover{
   background-color: transparent;
   
 }
-.icons:hover{
-  color: rgb(116, 116, 219)
 
-
-}
 
 .iconbut{
-  color: white
+  color: rgb(187, 154, 207)
 }
 .icon{
 
 }
 .text{
-  color: rgb(241, 241, 241);
+  color: rgb(177, 146, 218);
+  font-size: smaller;
 }
 .footer{
   
   color: white;
   
+}
+.type{
+  color :red;
+  background-color: aqua;
+
 }
 
 .content {
@@ -50,9 +52,6 @@ a:hover{
 .app {
     display: flex;
     position: relative;
-  
-
-  
   }
 
 

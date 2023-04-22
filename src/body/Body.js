@@ -10,10 +10,11 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { IconButton, Typography } from "@mui/material";
 import Container from "@mui/material/Container";
 import Sidebar from '../Sidebar';
+import Button from '@mui/material/Button';
 
 
 const Body = () => {
-  return (<div>gsdfsd</div>
+  return (<Button variant='outlined' sx = {{color: 'white'}}> HIRE ME  </Button>
   )
 };
 export default Body;
