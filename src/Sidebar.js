@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typography, colors } from "@mui/material";
 import "./App.scss"
 import {
@@ -16,12 +16,33 @@ import {
   import InfoIcon from '@mui/icons-material/Info';
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 function Sidebar() {
+  const [width,setwidth] = useState("")
+  const [collapse,setCollapse] = useState(false)
+  const getsize = () => {
+    setwidth(window.innerWidth)
+  }
+  useEffect( () => {
+    window.addEventListener('resize',getsize)
+    if (width < 900){
+      setCollapse(false)
+
+
+    } else{
+      setCollapse(true)
+    }
+    return () => {
+      window.removeEventListener('resize', getsize)
+    }
+
+  },[window.innerWidth])
+  
 
     return( 
-        <ProSidebar className = "sidebar" mt ="50px" brakpoint = "sm" style = {{height : "650px", borderRadius : "80%", opacity : "0.8"}}>
+        <ProSidebar collapsed = {collapse} className = "sidebar" mt ="50px" brakpoint = "sm" style = {{height : "100vh", borderRadius : "80%", opacity : "0.8"}}>
             <SidebarContent>
                 <SidebarHeader><br></br></SidebarHeader>
                 <Menu>
@@ -51,6 +72,12 @@ function Sidebar() {
                     <Link to="/Components/Home">Home </Link>
                     {/* <Typography variant ="h6"> Home</Typography> */}
                     </MenuItem>
+                    <MenuItem icon = {<PollIcon/>}>
+                        
+                        <Link to="/Components/Skills">Skills</Link>
+            
+            
+                        </MenuItem>
 
                     <MenuItem icon = {<ContactPhoneIcon/>}>
                         
@@ -60,7 +87,7 @@ function Sidebar() {
                     </MenuItem>
         
                     <Box className="sub">
-                    <SubMenu icon = {<PollIcon/>} title='Skills' >
+                    <SubMenu icon = {<PollIcon/>} title='Other Skills' >
                   
                         <MenuItem>
                     <Typography variant ="h8"> Reactjs</Typography>
@@ -82,6 +109,10 @@ function Sidebar() {
                    
         <Link to="/Components/About">About</Link>
                     </MenuItem>
+                    <MenuItem icon = {< FileDownloadIcon/>}>
+                   
+                   <Link to="/Components/Resume">Curriculum vitae</Link>
+                               </MenuItem>
 
 
 

@@ -178,17 +178,68 @@ a:hover{
   padding: 80px;
   
 }
-
- 
- 
- 
- @media(max-width : 500px){
-
-
-
-
-
+@media screen and (max-width : 1200px) {
+  
+  .link{
+    display: none;
+  }
+  .sidebar{
+    height: 1900px !important;
+  }
+  .homebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60%;
+  }
+  img{
+    margin-right: 100px !important;
+  }
+  h3{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .contactpage{
+    width: 400px;
+  height: 900px;
 
   }
+  .resumepage{
+    width: 400px;
+    height: 900px;
+  }
+  .aboutpage{
+    width: 400px;
+    height: 900px;
+  }
+  .skillspage{
+    width: 400px;
+    height: 900px;
+    font-size: 25px;
+  }
+  
+  p{
+    font-size: 32px;
+  }
+
+
+
+
+
+
+}
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+  
 
 

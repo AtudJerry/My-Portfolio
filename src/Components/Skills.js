@@ -17,13 +17,13 @@ const Skills = () => {
                         </p>
                         <ul className='skilllist' type ="circle" color="black">
                         <h3 className="head">Skills</h3>
-                            <Box ml= "40px" mr= "300px" sx={{display : 'flex',justifyContent : 'space-between'}}>
+                            <Box ml= "40px" mr= "20px" sx={{display : 'flex',justifyContent : 'space-between'}}>
                             <Row>
                                 
                                 <Col md={7}>
-                                    <li>HTML5/CSS3</li>
+                                    <li>html/css</li>
                                     <li>JavaScript</li>
-                                    <li>jQuery</li>
+                                    <li>Digital-drawing</li>
                                     <li>Git/Github</li>
                                 </Col>
                                 </Row> <br></br>

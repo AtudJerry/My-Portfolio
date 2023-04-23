@@ -10,7 +10,7 @@ import CallIcon from '@mui/icons-material/Call';
 
 
     return(
-        <Box sx = {{ flexGrow : 1,  display: 'flex',
+        <Box className = "topbar" sx = {{ flexGrow : 1,  display: 'flex',
             justifyContent : "space-between",
             marginLeft: '500px',
             marginRight: '20px',
@@ -18,13 +18,13 @@ import CallIcon from '@mui/icons-material/Call';
             }}>
         
         
-            <Link to="/Components/Home">Home </Link>
-            <Link to="/Components/Contact">Contact</Link>
+            <Link className="link" to="/Components/Home">Home </Link>
+            <Link className="link"  to="/Components/Contact">Contact</Link>
         
         
-            <Link to="/Components/Skills">Skills</Link>
-            <Link to="/Components/About">About</Link>
-            <Link to="/Components/Resume">Resume</Link>
+            <Link className="link"  to="/Components/Skills">Skills</Link>
+            <Link className="link" to="/Components/About">About</Link>
+            <Link  className="link" to="/Components/Resume">Resume</Link>
             
 
         
