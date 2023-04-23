@@ -18,6 +18,7 @@ function App() {
   
     
     <div className="app">
+    <Router>
       <Sidebar/>
 
       
@@ -27,7 +28,7 @@ function App() {
     
      
     <main className="content">
-    <Router>
+    
    
    <Topbar/>
       <Body/>
@@ -36,15 +37,18 @@ function App() {
      
               <index/>
       <Switch>
-      <Route exact path ="/Components/Home"> <Home/> </Route>
+      
+      
+      <Route path ="/Components/Home"> <Home/> </Route>
       <Route path= "/Components/Contact"> <Contact/></Route>
       <Route path= "/Components/About"> <About/></Route>
       <Route path= "/Components/Resume"> <Resume/></Route>
       <Route path= "/Components/Skills"> <Skills/></Route>
       
       </Switch>
-      </Router>
+    
     </main>
+    </Router>
   
  
   </div>

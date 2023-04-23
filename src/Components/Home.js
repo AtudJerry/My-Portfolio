@@ -12,8 +12,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { blue } from "@mui/material/colors";
 import Sidebar from "../Sidebar";
+import EmojiPicker from 'emoji-picker-react';
 
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
 
 
 
@@ -23,31 +24,32 @@ const Home = () => {
     <div>
     
         
-      <Box  padding = "3px" mt = "20px" sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box  padding = "3px" mt = "20px" sx={{ flexGrow : 1, display: "flex", justifyContent: "space-between" }}>
        
 
         <Box mt="90px" >
           <Container fluid className="container">
             <Box
+            ml = "60px"
               sx={{
                 bgcolor: "transparent",
-                // height: "50vh",
-                // width: "300px",
-                // borderRadius: "30%",
+                height: "50vh",
+                width: "300px",
+                borderRadius: "30%",
                 
               }}
             >
                 
-              <Typography className="text" variant="h5">
-                
-                My name is ATUD KONFOR JERRY, <br></br>I come from the North
-                West region of Cameroon.<br></br><br></br>Student at National Higher Polytechnic Institute Bamenda<br></br>I am a frontend developer and i work with <Typewriter className="type"
+              <h3>
+            
+                Hello👋, My name is ATUD KONFOR JERRY, <br></br>I come from the North 	
+                West region of Cameroon.<br></br><br></br>Student at National Higher Polytechnic Institute Bamenda<br></br>I am a frontend developer<Typewriter className="type"
   options={{
-    strings: ['JavaScript/Html/css','React'],
+    strings: ['I work with React','I work with JavaScript/Html/css'],
     autoStart: true,
     loop: true,
   }}
-/>
+/> </h3>
                 <br></br>
                 <Box
                   sx={{
@@ -77,12 +79,12 @@ const Home = () => {
                   
                   
                 </Box>
-              </Typography>
+              
             </Box>
           </Container>
         </Box>
 
-        <Box MT = "1000px" marginX={"150px"}>
+        <Box mt = "27px" marginX={"150px"}>
           {/* <Paper> */}
           <img
             alt="profile-user"

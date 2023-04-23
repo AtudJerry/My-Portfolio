@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, colors } from "@mui/material";
 import "./App.scss"
 import {
     ProSidebar,
@@ -10,32 +10,77 @@ import {
     SidebarFooter,
     SidebarHeader,
   } from "react-pro-sidebar";
-  
-
-
+  import HomeIcon from '@mui/icons-material/Home';
+  import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+  import PollIcon from '@mui/icons-material/Poll';
+  import InfoIcon from '@mui/icons-material/Info';
+import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
 
 
 function Sidebar() {
 
     return( 
-        <ProSidebar style = {{height : "650px"}}>
+        <ProSidebar className = "sidebar" mt ="50px" brakpoint = "sm" style = {{height : "650px", borderRadius : "80%", opacity : "0.8"}}>
             <SidebarContent>
-                <SidebarHeader>header</SidebarHeader>
+                <SidebarHeader><br></br></SidebarHeader>
                 <Menu>
-                    <MenuItem>
-                    <Typography variant ="h8"> menu item</Typography>
+                    <Box>
+                    <img
+                  alt="profile-user"
+                  width="100px"
+                  height="100px"
+                  src={require('./jerry.jpg')}
+                  style={{ marginLeft : "51px", marginTop : "20px" ,cursor: "pointer", borderRadius: "90%" }}
+                /> 
+                <Box textAlign="center">
+                <Typography
+                  variant="h5"
+                  color='white'
+                  fontWeight="bold"
+                  sx={{ m: "10px 0 0 0" }}
+                >
+                  Atud
+                </Typography>
+                </Box>
+                
+                
+                <br></br> <br></br>
+                    </Box>
+                    <MenuItem icon = {<HomeIcon/>}>
+                    <Link to="/Components/Home">Home </Link>
+                    {/* <Typography variant ="h6"> Home</Typography> */}
                     </MenuItem>
 
-                    <MenuItem>
-                    <Typography variant ="h8"> menu item</Typography>
+                    <MenuItem icon = {<ContactPhoneIcon/>}>
+                        
+                    <Link to="/Components/Contact">Contact</Link>
+        
+        
                     </MenuItem>
-
-                    <MenuItem>
-                    <Typography variant ="h8"> menu item</Typography>
+        
+                    <Box className="sub">
+                    <SubMenu icon = {<PollIcon/>} title='Skills' >
+                  
+                        <MenuItem>
+                    <Typography variant ="h8"> Reactjs</Typography>
                     </MenuItem>
-
                     <MenuItem>
-                    <Typography variant ="h8"> menu item</Typography>
+                    <Typography variant ="h8"> Html/css</Typography>
+                    </MenuItem>
+                    <MenuItem>
+                    <Typography variant ="h8">Python </Typography>
+                    </MenuItem>
+                    <MenuItem>
+                    <Typography variant ="h8"> Digital drawing</Typography>
+                    </MenuItem>
+                
+                    </SubMenu>
+                    </Box>
+
+                    <MenuItem icon = {<InfoIcon/>}>
+                   
+        <Link to="/Components/About">About</Link>
                     </MenuItem>
 
 
@@ -48,7 +93,7 @@ function Sidebar() {
 
 
             </SidebarContent>
-            <SidebarFooter>dfsfsfsdfs</SidebarFooter>
+            <SidebarFooter>atudjerry33@gmail.com</SidebarFooter>
         </ProSidebar>
 
 

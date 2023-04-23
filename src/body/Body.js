@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 
 
 const Body = () => {
-  return (<Button variant='outlined' sx = {{color: 'white'}}> HIRE ME  </Button>
+  return ( <a href = "https://drive.google.com/file/d/1ip_H3EHRxj4n7QL05bvO0eOVYpeRYGR-/view?usp=drivesdk "><Button variant='outlined'   sx = {{color: 'white', marginLeft:"30px"}}> HIRE ME  </Button> </a> 
   )
 };
 export default Body;

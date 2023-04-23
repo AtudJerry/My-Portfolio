@@ -10,7 +10,7 @@ import CallIcon from '@mui/icons-material/Call';
 
 
     return(
-        <Box sx = {{ display: 'flex',
+        <Box sx = {{ flexGrow : 1,  display: 'flex',
             justifyContent : "space-between",
             marginLeft: '500px',
             marginRight: '20px',
