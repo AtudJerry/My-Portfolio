@@ -9,11 +9,29 @@ import Skills from './Components/Skills';
 import Body from './body/Body';
 import Sidebar from './Sidebar';
 import Topbar from './topbar/Topbar';
-import { Box } from '@mui/material';
+
+import { Palette } from '@mui/material';
+import { useState } from 'react';
+import useTheme from '@mui/material';
+import {
+  makeStyles,
+  ThemeProvider,
+  createTheme,
+} from "@material-ui/core/styles";
 
 
 function App() {
-  return( <div>
+
+  const [mode,setMode] = useState('true')
+  const theme = createTheme({
+    Palette : {
+      mode : mode? 'dark' : 'light'
+    }
+  })
+  
+  return(
+    <div>
+    <ThemeProvider theme = {theme}>
     
   
     
@@ -31,7 +49,7 @@ function App() {
     
    
    <Topbar/>
-      <Body/>
+      <Body change = {() => setMode(!mode)}/>
       
 
      
@@ -52,7 +70,9 @@ function App() {
   
  
   </div>
-  </div>
+ 
+  </ThemeProvider>
+  </div> 
   
   )
 }

@@ -178,20 +178,27 @@ a:hover{
   padding: 80px;
   
 }
-@media screen and (max-width : 1200px) {
-  
+.menubar{
+  display: none;
+}
+
+@media screen and (max-width : 800px) {
+  img{
+    margin-left: 140px !important;
+  }
+ 
   .link{
     display: none;
   }
   .sidebar{
-    height: 1900px !important;
+    height: 700px;
   }
-  .homebox{
+  /* .homebox{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 60%;
-  }
+  } */
   img{
     margin-right: 100px !important;
   }

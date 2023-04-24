@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography, colors } from "@mui/material";
+import { IconButton, Typography, colors } from "@mui/material";
 import "./App.scss"
 import {
     ProSidebar,
@@ -17,11 +17,15 @@ import {
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 
 function Sidebar() {
   const [width,setwidth] = useState("")
   const [collapse,setCollapse] = useState(false)
+  const [display,setDisplay] = useState("")
+  const [breakpoint,setBreakpoint] = useState(false)
   const getsize = () => {
     setwidth(window.innerWidth)
   }
@@ -29,20 +33,33 @@ function Sidebar() {
     window.addEventListener('resize',getsize)
     if (width < 900){
       setCollapse(false)
+      setBreakpoint(true)
+      
 
 
     } else{
       setCollapse(true)
+      setBreakpoint(false)
+    
     }
     return () => {
       window.removeEventListener('resize', getsize)
     }
 
   },[window.innerWidth])
+
+  function brea(){
+    setBreakpoint(!breakpoint)
+  }
   
 
     return( 
-        <ProSidebar collapsed = {collapse} className = "sidebar" mt ="50px" brakpoint = "sm" style = {{height : "100vh", borderRadius : "80%", opacity : "0.8"}}>
+      <div>
+        <Box className="menu">
+          <IconButton onClick={brea} variant = "contained" color="primary"> <MenuIcon/></IconButton>
+           
+        </Box>
+        <ProSidebar collapsed = {collapse} breakPoint = {breakpoint? "sm": ""} className = "sidebar" mt ="50px" brakpoint = "sm" style = {{height : "100vh", borderRadius : "80%", opacity : "0.8"}}>
             <SidebarContent>
                 <SidebarHeader><br></br></SidebarHeader>
                 <Menu>
@@ -124,11 +141,12 @@ function Sidebar() {
 
 
             </SidebarContent>
-            <SidebarFooter>atudjerry33@gmail.com</SidebarFooter>
+            <SidebarFooter>.</SidebarFooter>
         </ProSidebar>
+        
 
 
-
+</div>
 
 
 

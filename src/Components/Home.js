@@ -21,10 +21,10 @@ const Home = () => {
     <div>
       <Box
         className="homebox"
-        ml = "10px"
+        ml = "0px"
         mt="6px"
-        mr = "100px"
-        sx={{ padding:"3px", display: "flex",  justifyContent: "space-between" }}
+        mr = "40px"
+        sx={{  display: "flex",  justifyContent: "space-between" }}
       >
         <Box mt="27px" marginX={"150px"}>
           {/* <Paper> */}
